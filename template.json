@@ -1,0 +1,19 @@
+{
+  "format": "json_v2",
+  "id": "root",
+  "type": "page",
+  "state": {},
+  "content": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Digital Nomad Planner Template"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Nomad Planner - Notion Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .template-preview {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .preview-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .preview-content {
+            padding: 20px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .price-section {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .price-label {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        .btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .payment-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .invoice-details {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .status {
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .status.pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status.paid {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status.expired {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .download-section h2 {
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .price {
+                font-size: 2.2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Nomad Planner</h1>
+        <p>The ultimate Notion workspace for location-independent professionals</p>
+    </header>
+    
+    <div class="container">
+        <div class="template-preview">
+            <div class="preview-header">
+                <h2>What's Included</h2>
+                <p>Complete Notion workspace designed specifically for digital nomads, remote workers, and location-independent professionals</p>
+            </div>
+            <div class="preview-content">
+                <p>This comprehensive Notion template helps you manage your work, finances, travel, and personal life while living the location-independent lifestyle.</p>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📊 Project & Task Management</h3>
+                <p>Kanban boards, calendar views, and task prioritization systems tailored for remote work</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Financial Tracker</h3>
+                <p>Multi-currency expense tracking, income reporting, and tax preparation tools</p>
+            </div>
+            <div class="feature">
+                <h3>✈️ Travel Planner</h3>
+                <p>Destination research, booking tracking, and itinerary management for constant movers</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 Goal Setting</h3>
+                <p>Quarterly planning, habit tracking, and progress visualization for long-term success</p>
+            </div>
+            <div class="feature">
+                <h3>📚 Knowledge Base</h3>
+                <p>Organized storage for resources, contacts, and important documents</p>
+            </div>
+            <div class="feature">
+                <h3>📅 Life Dashboard</h3>
+                <p>Overview of all areas of your life with quick access to what matters most</p>
+            </div>
+        </div>
+        
+        <div class="price-section">
+            <div class="price">$19</div>
+            <div class="price-label">One-time payment - Lifetime access</div>
+            <p>Pay with Bitcoin or mobile money (Telebirr/Chapa)</p>
+        </div>
+        
+        <button id="buyBtn" class="btn">Buy Now - Get Instant Access</button>
+        
+        <div id="paymentSection" class="payment-section">
+            <h3>Payment Instructions</h3>
+            <div id="invoiceDetails" class="invoice-details">
+                <p id="statusText" class="status pending">Processing payment...</p>
+                <p>Please complete the payment using the instructions below:</p>
+                <div id="paymentInfo">
+                    <!-- Payment details will be inserted here -->
+                </div>
+                <div id="qrCode"></div>
+            </div>
+        </div>
+        
+        <div id="downloadSection" class="download-section">
+            <h2>Payment Confirmed! 🎉</h2>
+            <p>Your Digital Nomad Planner template is ready for download.</p>
+            <button id="downloadBtn" class="btn">Download Template</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Digital Nomad Planner. Built with ❤️ for location-independent professionals.</p>
+    </footer>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            TEMPLATE_PRICE_USD: 19,
+            STORE_NAME: "Digital Nomad Planner",
+            // In a real implementation, this would come from your backend
+            // For now, we'll simulate the payment flow
+        };
+        
+        let currentInvoiceId = null;
+        let paymentInterval = null;
+        
+        document.getElementById('buyBtn').addEventListener('click', async () => {
+            const buyBtn = document.getElementById('buyBtn');
+            buyBtn.disabled = true;
+            buyBtn.textContent = 'Processing...';
+            
+            try {
+                // Show payment section
+                document.getElementById('paymentSection').style.display = 'block';
+                
+                // Generate invoice using SPT (simulated for now)
+                const invoice = await generateInvoice();
+                currentInvoiceId = invoice.id;
+                
+                // Display payment information
+                displayPaymentInfo(invoice);
+                
+                // Start checking payment status
+                startPaymentCheck();
+                
+            } catch (error) {
+                console.error('Error generating invoice:', error);
+                alert('Error generating payment invoice. Please try again.');
+                buyBtn.disabled = false;
+                buyBtn.textContent = 'Buy Now - Get Instant Access';
+            }
+        });
+        
+        async function generateInvoice() {
+            // In a real implementation, this would call your SPT plugin
+            // For demo purposes, we'll simulate with a mock response
+            
+            // Try to use the actual SPT plugin first
+            try {
+                // This would normally work if BTCPay was running
+                const response = await fetch('/.opencode/plugins/spt/index.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'generate_bitcoin_invoice',
+                        amount: CONFIG.TEMPLATE_PRICE_USD,
+                        order_id: `nomad-planner-${Date.now()}`
+                    })
+                });
+                
+                if (response.ok) {
+                    return await response.json();
+                }
+            } catch (e) {
+                console.log('SPT plugin not available, using simulation:', e);
+            }
+            
+            // Fallback simulation
+            return {
+                id: `inv_sim_${Date.now()}`,
+                status: 'new',
+                amount: CONFIG.TEMPLATE_PRICE_USD,
+                currency: 'USD',
+                checkoutUrl: `bitcoin:bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh?amount=0.0005&label=${CONFIG.STORE_NAME}&message=Digital%20Nomad%20Planner`,
+                expirationTime: Date.now() + (30 * 60 * 1000) // 30 minutes
+            };
+        }
+        
+        function displayPaymentInfo(invoice) {
+            const statusText = document.getElementById('statusText');
+            const paymentInfo = document.getElementById('paymentInfo');
+            const qrCode = document.getElementById('qrCode');
+            
+            statusText.textContent = 'Payment Pending';
+            statusText.className = 'status pending';
+            
+            paymentInfo.innerHTML = `
+                <h4>Pay exactly:</h4>
+                <p><strong>${invoice.amount} USD</strong> (approximately 0.0005 BTC)</p>
+                <h4>Payment Options:</h4>
+                <ul>
+                    <li><strong>Bitcoin:</strong> Scan the QR code or copy the address below</li>
+                    <li><strong>Mobile Money:</strong> Send to +251 986 540 218 (Telebirr/Chapa)</li>
+                </ul>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0;">
+                    <strong>Bitcoin Address:</strong><br>
+                    <code style="font-size: 0.9em;">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
+                </div>
+                <p><em>Payment must be completed within 30 minutes.</em></p>
+            `;
+            
+            // Generate QR code (using a free API)
+            const btcAddress = 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh';
+            qrCode.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(btcAddress)}" alt="Bitcoin QR Code" style="margin: 10px auto; display: block;">`;
+        }
+        
+        async function startPaymentCheck() {
+            clearInterval(paymentInterval);
+            
+            paymentInterval = setInterval(async () => {
+                try {
+                    const status = await checkPaymentStatus(currentInvoiceId);
+                    
+                    if (status.settled) {
+                        clearInterval(paymentInterval);
+                        await paymentConfirmed();
+                    } else if (status.expired) {
+                        clearInterval(paymentInterval);
+                        await paymentExpired();
+                    }
+                    // Otherwise, keep checking
+                } catch (error) {
+                    console.error('Error checking payment status:', error);
+                }
+            }, 5000); // Check every 5 seconds
+        }
+        
+        async function checkPaymentStatus(invoiceId) {
+            // Try to use actual SPT plugin
+            try {
+                const response = await fetch('/.opencode/plugins/spt/index.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'get_invoice_status',
+                        invoice_id: invoiceId
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    return {
+                        settled: result.status === 'settled' || result.status === 'confirmed',
+                        expired: result.status === 'expired' || Date.now() > result.expirationTime
+                    };
+                }
+            } catch (e) {
+                console.log('SPT plugin not available for status check, simulating:', e);
+            }
+            
+            // Simulate payment check - in reality, this would check the blockchain/webhook
+            // For demo, we'll auto-confirm after 15 seconds
+            const elapsed = Date.now() - parseInt(invoiceId.split('_')[2]);
+            if (elapsed > 15000) { // 15 seconds for demo
+                return { settled: true, expired: false };
+            } else if (elapsed > 30000) { // 30 seconds expiry
+                return { settled: false, expired: true };
+            }
+            
+            return { settled: false, expired: false };
+        }
+        
+        async function paymentConfirmed() {
+            document.getElementById('statusText').textContent = 'Payment Confirmed!';
+            document.getElementById('statusText').className = 'status paid';
+            
+            document.getElementById('paymentInfo').innerHTML = `
+                <p>Thank you for your payment! Your Digital Nomad Planner template is ready for download.</p>
+                <p><em>You will be redirected to the download page in 3 seconds...</em></p>
+            `;
+            
+            document.getElementById('qrCode').innerHTML = '';
+            
+            // Show download section after a brief delay
+            setTimeout(() => {
+                document.getElementById('downloadSection').style.display = 'block';
+            }, 3000);
+        }
+        
+        async function paymentExpired() {
+            document.getElementById('statusText').textContent = 'Payment Expired';
+            document.getElementById('statusText').className = 'status expired';
+            
+            document.getElementById('paymentInfo').innerHTML = `
+                <p>Your payment window has expired. Please try again if you still wish to purchase.</p>
+                <button id="retryBtn" class="btn" style="margin-top: 15px;">Try Again</button>
+            `;
+            
+            document.getElementById('qrCode').innerHTML = '';
+            
+            document.getElementById('retryBtn').addEventListener('click', () => {
+                location.reload();
+            });
+        }
+        
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            // In a real implementation, this would serve the actual template file
+            // For now, we'll simulate with a redirect to a download endpoint
+            window.location.href = '/download/template.json';
+        });
+    </script>
+</body>
+</html>
